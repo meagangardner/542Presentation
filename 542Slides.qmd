@@ -1,0 +1,179 @@
+---
+title: "Customer Term Deposit Predictor"
+author: "Meagan Gardner, Elshaday Yoseph, Shell Ou, Henry Ha"
+format: revealjs
+slide-number: true
+
+---
+
+## Land Acknowledgement
+
+*With gratitude, we would like to acknowledge we are located on the traditional, unceded, ancestral territories of the xʷməθkʷəy̓əm (Musqueam), Sḵwx̱wú7mesh (Squamish), and səlil̓wətaɁɬ (Tsleil-Waututh) First Nations, whose historical relationships with the land continue to this day.*
+
+---
+
+## Presentation Overview
+- **Meagan:** Background and research question
+- **Elshaday:** Exploratory Data Analysis
+- **Shell:** Logistic Regression Model
+- **Henry:** Results and conclusion
+
+---
+
+## Canada's Investment Landscape
+- 79% of Canadians recognize the importance of investing
+- Only 48% actually invest annually
+- Over half of those that don't invest state a fear of losing money
+- **The Opportunity:** Low-risk investment options!
+
+---
+
+## What is a Term Deposit?
+- A low-risk, steady way to grow your savings
+- Keeps initial investment secure
+![](img/TermDeposit.png)
+
+---
+
+## Our Research Goal
+
+**We aim to determine whether a machine learning model can predict if a customer will agree to open a term deposit**
+
+-  This will lead to:
+    - More targeted campaigns
+    - Cost effectiveness
+    - Improved customer relationships.
+
+
+# Exploratory Data Analysis
+
+---
+
+## Elshaday Slides (to be updated)
+
+---
+
+## Elshaday Slides (to be updated)
+
+---
+
+## Elshaday Slides (to be updated)
+
+---
+
+## Elshaday Slides (to be updated)
+
+---
+
+## Elshaday Slides (to be updated)
+
+# The Model
+
+## Shell Slides (to be updated)
+
+---
+
+## Shell Slides (to be updated)
+
+---
+
+## Shell Slides (to be updated)
+
+---
+
+## Shell Slides (to be updated)
+
+---
+
+## Shell Slides (to be updated)
+
+# Results and Discussion
+
+## Confusion Matrix
+
+::: {.columns}
+
+::: {.column width="50%"}
+-  Key Insights
+    - Strong performance for non-subscribers.
+    - Low precision for subscribers (0.24).
+    - Highlights true positives, true negatives, false positives, and false negatives.
+:::
+
+::: {.column width="50%"}
+![](img/Confusion_Matrix.png){fig-align="center" width="100%"}
+:::
+
+:::
+
+---
+
+## Precision-Recall Curve
+::: {.columns}
+
+::: {.column width="50%"}
+-  Key Insights:
+    - Precision-recall trade-off is critical.
+    - Impact of threshold adjustments on precision and recall metrics.
+
+:::
+
+::: {.column width="50%"}
+![](img/PR_curve.png){fig-align="center" width="100%"}
+:::
+
+:::
+
+---
+
+## ROC Curve
+::: {.columns}
+
+::: {.column width="50%"}
+-  Key Insights:
+    - AUC score of 0.75 suggests moderate predictive power.
+    - Useful for assessing model performance across thresholds.
+
+
+:::
+
+::: {.column width="50%"}
+![](img/ROC_curve.png){fig-align="center" width="100%"}
+:::
+
+:::
+
+---
+
+## Limitations
+-  Key Points:
+    - Dataset Imbalance: Significant imbalance affects precision.
+    Precision Issues: Low precision for term deposit subscribers.
+    Model Scope: Logistic regression may not capture complex relationships.
+    Feature Limitations: Lack of features like transaction history impacts performance.
+
+---
+
+## Practical Implications
+
+- Applications:
+    - Optimize marketing strategies using model predictions.
+    - Efficient resource allocation.
+
+- Challenges:
+    - Low precision increases costs by targeting non-subscribers.
+    - Improvements in precision are needed for better efficiency.
+
+---
+
+## Future Research Directions
+
+- Suggestions:
+    1) Advanced Models: Use Random Forests or Gradient Boosting Machines to improve precision and accuracy.
+    2) Additional Features: Include transaction history or customer engagement metrics.
+    3) Economic Context: Integrate external factors such as interest rates or market conditions.
+
+
+# Questions?
+
+---
