@@ -383,20 +383,59 @@ Meagan Gardner, Elshaday Yoseph, Shell Ou, Henry Ha
 <h1>Exploratory Data Analysis</h1>
 
 </section>
-<section id="elshaday-slides-to-be-updated" class="slide level2">
-<h2>Elshaday Slides (to be updated)</h2>
+<section id="target-variable-distribution" class="slide level2">
+<h2>Target Variable Distribution</h2>
+<ul>
+<li>88.3% are non-subscribers.</li>
+<li>11.7% are subscribers. <img data-src="img/target_variable_distribution.png"></li>
+</ul>
 </section>
-<section id="elshaday-slides-to-be-updated-1" class="slide level2">
-<h2>Elshaday Slides (to be updated)</h2>
+<section id="balance-distribution-by-subscription-status" class="slide level2">
+<h2>Balance Distribution by Subscription Status</h2>
+<ul>
+<li>Subscribers generally have higher balances compared to non-subscribers.</li>
+<li>There are significant outliers for both groups.</li>
+<li>Balance could be a strong predictor for subscription.</li>
+</ul>
 </section>
-<section id="elshaday-slides-to-be-updated-2" class="slide level2">
-<h2>Elshaday Slides (to be updated)</h2>
+<section id="feature-densities-by-class" class="slide level2">
+<h2>Feature Densities by Class</h2>
+<ul>
+<li>Comparing feature distributions between subscribers and non-subscribers:
+<ul>
+<li>Age: Subscribers are concentrated in middle-aged groups.</li>
+<li>Balance: Subscribers tend to have higher balances.</li>
+<li>Campaign: Fewer contact attempts are common for most clients.</li>
+</ul></li>
+</ul>
 </section>
-<section id="elshaday-slides-to-be-updated-3" class="slide level2">
-<h2>Elshaday Slides (to be updated)</h2>
+<section id="correlation-heatmap" class="slide level2">
+<h2>Correlation Heatmap</h2>
+<ul>
+<li>Most features exhibit weak correlations.</li>
+<li>Moderate correlation observed between:
+<ul>
+<li>pdays (days since last contact) and previous (number of prior contacts).</li>
+</ul></li>
+<li>Minimal multicollinearity ensures model interpretability.</li>
+</ul>
 </section>
-<section id="elshaday-slides-to-be-updated-4" class="slide level2">
-<h2>Elshaday Slides (to be updated)</h2>
+<section id="key-insights" class="slide level2">
+<h2>Key Insights</h2>
+<ul>
+<li>Dataset Imbalance:
+<ul>
+<li>Requires class balancing to improve predictions.</li>
+</ul></li>
+<li>Feature Selection:
+<ul>
+<li>Balance and contact-related features are likely key predictors.</li>
+</ul></li>
+<li>Preprocessing:
+<ul>
+<li>Addressed missing values and removed irrelevant features.</li>
+</ul></li>
+</ul>
 </section></section>
 <section>
 <section id="the-model" class="title-slide slide level1 center">

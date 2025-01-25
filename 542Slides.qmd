@@ -49,23 +49,40 @@ slide-number: true
 
 ---
 
-## Elshaday Slides (to be updated)
+## Target Variable Distribution
+- 88.3% are non-subscribers.
+- 11.7% are subscribers.
+![](img/target_variable_distribution.png)
+---
+
+## Balance Distribution by Subscription Status
+- Subscribers generally have higher balances compared to non-subscribers.
+- There are significant outliers for both groups.
+- Balance could be a strong predictor for subscription.
 
 ---
 
-## Elshaday Slides (to be updated)
-
+## Feature Densities by Class
+- Comparing feature distributions between subscribers and non-subscribers:
+    - Age: Subscribers are concentrated in middle-aged groups.
+    - Balance: Subscribers tend to have higher balances.
+    - Campaign: Fewer contact attempts are common for most clients.
 ---
 
-## Elshaday Slides (to be updated)
-
+## Correlation Heatmap
+- Most features exhibit weak correlations.
+- Moderate correlation observed between:
+    - pdays (days since last contact) and previous (number of prior contacts).
+- Minimal multicollinearity ensures model interpretability.
 ---
 
-## Elshaday Slides (to be updated)
-
----
-
-## Elshaday Slides (to be updated)
+## Key Insights
+- Dataset Imbalance:
+    - Requires class balancing to improve predictions.
+- Feature Selection:
+    - Balance and contact-related features are likely key predictors.
+- Preprocessing:
+    - Addressed missing values and removed irrelevant features.
 
 # The Model
 
