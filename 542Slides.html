@@ -442,20 +442,93 @@ Meagan Gardner, Elshaday Yoseph, Shell Ou, Henry Ha
 <h1>The Model</h1>
 
 </section>
-<section id="shell-slides-to-be-updated" class="slide level2">
-<h2>Shell Slides (to be updated)</h2>
+<section id="logistic-regression-model-overview" class="slide level2">
+<h2>Logistic Regression Model Overview</h2>
+<ul>
+<li><strong>Why Logistic Regression?</strong>
+<ul>
+<li>Simple and interpretable model for binary classification.</li>
+<li>Useful for understanding key predictors for term deposit subscription.</li>
+</ul></li>
+<li><strong>Key Features Used in the Model:</strong>
+<ul>
+<li><strong>Balance</strong>: Higher balances indicate higher likelihood of subscription.</li>
+<li><strong>Campaign and Previous Contact</strong>: Capture customer interactions.</li>
+<li><strong>Contact Method</strong>: Includes phone and unknown categories.</li>
+</ul></li>
+</ul>
 </section>
-<section id="shell-slides-to-be-updated-1" class="slide level2">
-<h2>Shell Slides (to be updated)</h2>
+<section id="handling-dataset-imbalance" class="slide level2">
+<h2>Handling Dataset Imbalance</h2>
+<ul>
+<li><strong>Challenge</strong>:
+<ul>
+<li>The dataset is highly imbalanced, with only 11.7% subscribers.</li>
+<li>Without addressing this, the model would overpredict non-subscribers.</li>
+</ul></li>
+<li><strong>Solution</strong>:
+<ul>
+<li>Applied class balancing techniques:
+<ul>
+<li>Oversampling the minority class (subscribers).</li>
+<li>Weight adjustments to penalize misclassification of subscribers.</li>
+</ul></li>
+</ul></li>
+</ul>
 </section>
-<section id="shell-slides-to-be-updated-2" class="slide level2">
-<h2>Shell Slides (to be updated)</h2>
+<section id="model-training-process" class="slide level2">
+<h2>Model Training Process</h2>
+<ol type="1">
+<li><strong>Data Preprocessing</strong>:
+<ul>
+<li>Standardized numerical features (e.g., balance, age).</li>
+<li>One-hot encoded categorical variables (e.g., job, education, contact).</li>
+</ul></li>
+<li><strong>Logistic Regression</strong>:
+<ul>
+<li>Binary classification model with sigmoid activation.</li>
+<li>Outputs probabilities for subscription likelihood.</li>
+</ul></li>
+<li><strong>Hyperparameter Tuning</strong>:
+<ul>
+<li>Grid search for optimal regularization (<code>C</code> parameter).</li>
+<li>Evaluated using cross-validation on training data.</li>
+</ul></li>
+</ol>
 </section>
-<section id="shell-slides-to-be-updated-3" class="slide level2">
-<h2>Shell Slides (to be updated)</h2>
+<section id="model-evaluation-metrics" class="slide level2">
+<h2>Model Evaluation Metrics</h2>
+<ul>
+<li><strong>Key Metrics Used</strong>:
+<ul>
+<li><strong>Precision</strong>: Focus on positive predictions (subscribers).</li>
+<li><strong>Recall</strong>: Measure of sensitivity for subscriber identification.</li>
+<li><strong>AUC-ROC</strong>: Overall performance across thresholds.</li>
+</ul></li>
+<li><strong>Why These Metrics?</strong>
+<ul>
+<li>Precision and recall balance is critical for imbalanced datasets.</li>
+<li>AUC-ROC provides a broader perspective on model performance.</li>
+</ul></li>
+</ul>
 </section>
-<section id="shell-slides-to-be-updated-4" class="slide level2">
-<h2>Shell Slides (to be updated)</h2>
+<section id="model-limitations" class="slide level2">
+<h2>Model Limitations</h2>
+<ul>
+<li><strong>Dataset Imbalance</strong>:
+<ul>
+<li>Precision remains low for the minority class (subscribers).</li>
+<li>Results in higher false positives, increasing marketing costs.</li>
+</ul></li>
+<li><strong>Model Simplicity</strong>:
+<ul>
+<li>Logistic regression may not capture non-linear patterns or complex relationships.</li>
+</ul></li>
+<li><strong>Feature Limitations</strong>:
+<ul>
+<li>Lack of transaction history and economic indicators reduces predictive power.</li>
+</ul></li>
+</ul>
 </section></section>
 <section>
 <section id="results-and-discussion" class="title-slide slide level1 center">

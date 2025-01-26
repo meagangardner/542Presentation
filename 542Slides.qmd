@@ -86,23 +86,75 @@ slide-number: true
 
 # The Model
 
-## Shell Slides (to be updated)
+---
+
+## Logistic Regression Model Overview
+
+- **Why Logistic Regression?**
+  - Simple and interpretable model for binary classification.
+  - Useful for understanding key predictors for term deposit subscription.
+
+- **Key Features Used in the Model:**
+  - **Balance**: Higher balances indicate higher likelihood of subscription.
+  - **Campaign and Previous Contact**: Capture customer interactions.
+  - **Contact Method**: Includes phone and unknown categories.
 
 ---
 
-## Shell Slides (to be updated)
+## Handling Dataset Imbalance
+
+- **Challenge**:
+  - The dataset is highly imbalanced, with only 11.7% subscribers.
+  - Without addressing this, the model would overpredict non-subscribers.
+
+- **Solution**:
+  - Applied class balancing techniques:
+    - Oversampling the minority class (subscribers).
+    - Weight adjustments to penalize misclassification of subscribers.
 
 ---
 
-## Shell Slides (to be updated)
+## Model Training Process
+
+1. **Data Preprocessing**:
+   - Standardized numerical features (e.g., balance, age).
+   - One-hot encoded categorical variables (e.g., job, education, contact).
+
+2. **Logistic Regression**:
+   - Binary classification model with sigmoid activation.
+   - Outputs probabilities for subscription likelihood.
+
+3. **Hyperparameter Tuning**:
+   - Grid search for optimal regularization (`C` parameter).
+   - Evaluated using cross-validation on training data.
 
 ---
 
-## Shell Slides (to be updated)
+## Model Evaluation Metrics
+
+- **Key Metrics Used**:
+  - **Precision**: Focus on positive predictions (subscribers).
+  - **Recall**: Measure of sensitivity for subscriber identification.
+  - **AUC-ROC**: Overall performance across thresholds.
+
+- **Why These Metrics?**
+  - Precision and recall balance is critical for imbalanced datasets.
+  - AUC-ROC provides a broader perspective on model performance.
 
 ---
 
-## Shell Slides (to be updated)
+## Model Limitations
+
+- **Dataset Imbalance**:
+  - Precision remains low for the minority class (subscribers).
+  - Results in higher false positives, increasing marketing costs.
+
+- **Model Simplicity**:
+  - Logistic regression may not capture non-linear patterns or complex relationships.
+
+- **Feature Limitations**:
+  - Lack of transaction history and economic indicators reduces predictive power.
+
 
 # Results and Discussion
 
