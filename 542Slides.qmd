@@ -44,6 +44,8 @@ slide-number: true
     - Cost effectiveness
     - Improved customer relationships.
 
+---
+
 ## The Dataset
 
 - Dataset obtained from UCI Machine Learning Repository
