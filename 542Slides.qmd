@@ -49,8 +49,7 @@ slide-number: true
 - Dataset obtained from UCI Machine Learning Repository
 - Each row represents a bank client
 - 17 features capturing client characteristics:
-    - Age, marital status, education level
-    - Past interactions, days since last contact
+    - Age, marital status, education level, past interactions, days since last contact
     - Binary target column
 
 # Exploratory Data Analysis
