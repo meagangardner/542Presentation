@@ -45,7 +45,7 @@ slide-number: true
 **We aim to determine whether a machine learning model can predict if a customer will agree to open a term deposit**
 
 -  This will lead to:
-    - More targeted campaigns
+    - More targeted calling campaigns
     - Cost effectiveness
     - Improved customer relationships.
 
