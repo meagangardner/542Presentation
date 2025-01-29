@@ -177,10 +177,9 @@ slide-number: true
 ::: {.columns}
 
 ::: {.column width="50%"}
--  Key Insights
-    - Strong performance for non-subscribers.
-    - Low precision for subscribers (0.24).
-    - Highlights true positives, true negatives, false positives, and false negatives.
+- Strong performance for non-subscribers.
+- Low precision for subscribers (0.24).
+- Highlights true positives, true negatives, false positives, and false negatives.
 :::
 
 ::: {.column width="50%"}
@@ -195,9 +194,8 @@ slide-number: true
 ::: {.columns}
 
 ::: {.column width="50%"}
--  Key Insights:
-    - Precision-recall trade-off is critical.
-    - Impact of threshold adjustments on precision and recall metrics.
+- Precision-recall trade-off is critical.
+- Impact of threshold adjustments on precision and recall metrics.
 
 :::
 
@@ -213,9 +211,8 @@ slide-number: true
 ::: {.columns}
 
 ::: {.column width="50%"}
--  Key Insights:
-    - AUC score of 0.75 suggests moderate predictive power.
-    - Useful for assessing model performance across thresholds.
+- AUC score of 0.75 suggests moderate predictive power.
+- Useful for assessing model performance across thresholds.
 
 
 :::
@@ -229,11 +226,10 @@ slide-number: true
 ---
 
 ## Limitations
--  Key Points:
-    - Dataset Imbalance: Significant imbalance affects precision.
-    Precision Issues: Low precision for term deposit subscribers.
-    Model Scope: Logistic regression may not capture complex relationships.
-    Feature Limitations: Lack of features like transaction history impacts performance.
+- Dataset Imbalance: Significant imbalance affects precision.
+- Precision Issues: Low precision for term deposit subscribers.
+- Model Scope: Logistic regression may not capture complex relationships.
+- Feature Limitations: Lack of features like transaction history impacts performance.
 
 ---
 
@@ -255,6 +251,9 @@ slide-number: true
     1) Advanced Models: Use Random Forests or Gradient Boosting Machines to improve precision and accuracy.
     2) Additional Features: Include transaction history or customer engagement metrics.
     3) Economic Context: Integrate external factors such as interest rates or market conditions.
+
+## Conclusion
+
 
 
 # Questions?
