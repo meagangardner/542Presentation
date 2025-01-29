@@ -177,9 +177,10 @@ slide-number: true
 ::: {.columns}
 
 ::: {.column width="50%"}
-- Strong performance for non-subscribers.
+- Successfully filters out 71.3% of non-subscribers
+- Good recall for subscribers (0.65)
 - Low precision for subscribers (0.24).
-- Highlights true positives, true negatives, false positives, and false negatives.
+- 3 times better than dummy 
 :::
 
 ::: {.column width="50%"}
@@ -194,8 +195,9 @@ slide-number: true
 ::: {.columns}
 
 ::: {.column width="50%"}
-- Precision-recall trade-off is critical.
-- Impact of threshold adjustments on precision and recall metrics.
+- Precision-recall trade-off based on decision threshold
+- Impact of threshold adjustments on precision and recall metrics
+- Average precision (AP) score is 0.33
 
 :::
 
@@ -227,9 +229,10 @@ slide-number: true
 
 ## Limitations
 - Dataset Imbalance: Significant imbalance affects precision.
-- Precision Issues: Low precision for term deposit subscribers.
 - Model Scope: Logistic regression may not capture complex relationships.
 - Feature Limitations: Lack of features like transaction history impacts performance.
+- Feature Importance: Logistic regression treats features linearly and does not consider their importance.
+- Parameter Optimization: The current model may not be optimally tuned.
 
 ---
 
@@ -251,6 +254,9 @@ slide-number: true
     1) Advanced Models: Use Random Forests or Gradient Boosting Machines to improve precision and accuracy.
     2) Additional Features: Include transaction history or customer engagement metrics.
     3) Economic Context: Integrate external factors such as interest rates or market conditions.
+    4) Oversampling Techniques: Implement techniques to balance the dataset and reduce bias toward the majority class.
+    5) Feature Selection and Importance Analysis: Apply techniques to better understand which features contribute most.
+    6) Optimal Parameter Tuning: Conduct techniques to optimally tune the hyperparameters.
 
 ## Conclusion
 

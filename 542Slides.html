@@ -8,7 +8,7 @@
 <link href="542Slides_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="542Slides_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="542Slides_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.56">
+  <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Meagan Gardner, Elshaday Yoseph, Shell Ou, Henry Ha">
   <title>Customer Term Deposit Predictor</title>
@@ -559,12 +559,10 @@ Meagan Gardner, Elshaday Yoseph, Shell Ou, Henry Ha
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
-<li>Key Insights
-<ul>
-<li>Strong performance for non-subscribers.</li>
+<li>Successfully filters out 71.3% of non-subscribers</li>
+<li>Good recall for subscribers (0.65)</li>
 <li>Low precision for subscribers (0.24).</li>
-<li>Highlights true positives, true negatives, false positives, and false negatives.</li>
-</ul></li>
+<li>3 times better than dummy</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
@@ -579,11 +577,9 @@ Meagan Gardner, Elshaday Yoseph, Shell Ou, Henry Ha
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
-<li>Key Insights:
-<ul>
-<li>Precision-recall trade-off is critical.</li>
-<li>Impact of threshold adjustments on precision and recall metrics.</li>
-</ul></li>
+<li>Precision-recall trade-off based on decision threshold</li>
+<li>Impact of threshold adjustments on precision and recall metrics</li>
+<li>Average precision (AP) score is 0.33</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
@@ -598,11 +594,8 @@ Meagan Gardner, Elshaday Yoseph, Shell Ou, Henry Ha
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
-<li>Key Insights:
-<ul>
 <li>AUC score of 0.75 suggests moderate predictive power.</li>
 <li>Useful for assessing model performance across thresholds.</li>
-</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
@@ -615,10 +608,11 @@ Meagan Gardner, Elshaday Yoseph, Shell Ou, Henry Ha
 <section id="limitations" class="slide level2">
 <h2>Limitations</h2>
 <ul>
-<li>Key Points:
-<ul>
-<li>Dataset Imbalance: Significant imbalance affects precision. Precision Issues: Low precision for term deposit subscribers. Model Scope: Logistic regression may not capture complex relationships. Feature Limitations: Lack of features like transaction history impacts performance.</li>
-</ul></li>
+<li>Dataset Imbalance: Significant imbalance affects precision.</li>
+<li>Model Scope: Logistic regression may not capture complex relationships.</li>
+<li>Feature Limitations: Lack of features like transaction history impacts performance.</li>
+<li>Feature Importance: Logistic regression treats features linearly and does not consider their importance.</li>
+<li>Parameter Optimization: The current model may not be optimally tuned.</li>
 </ul>
 </section>
 <section id="practical-implications" class="slide level2">
@@ -644,8 +638,14 @@ Meagan Gardner, Elshaday Yoseph, Shell Ou, Henry Ha
 <li>Advanced Models: Use Random Forests or Gradient Boosting Machines to improve precision and accuracy.</li>
 <li>Additional Features: Include transaction history or customer engagement metrics.</li>
 <li>Economic Context: Integrate external factors such as interest rates or market conditions.</li>
+<li>Oversampling Techniques: Implement techniques to balance the dataset and reduce bias toward the majority class.</li>
+<li>Feature Selection and Importance Analysis: Apply techniques to better understand which features contribute most.</li>
+<li>Optimal Parameter Tuning: Conduct techniques to optimally tune the hyperparameters.</li>
 </ol></li>
 </ul>
+</section>
+<section id="conclusion" class="slide level2">
+<h2>Conclusion</h2>
 </section></section>
 <section>
 <section id="questions" class="title-slide slide level1 center">
