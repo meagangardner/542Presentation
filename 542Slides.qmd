@@ -26,7 +26,7 @@ slide-number: true
 - Over half of those that don't invest state a fear of losing money
 - **The Opportunity:** Low-risk investment options!
 <center>
-  ![](img/loosing-money.png){ width=35% }
+  ![](img/money-stress.png){ width=35% }
 </center>
 
 ---
