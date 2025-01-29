@@ -24,10 +24,10 @@ slide-number: true
 - 79% of Canadians recognize the importance of investing
 - Only 48% actually invest annually
 - Over half of those that don't invest state a fear of losing money
-<center>
-  ![](img/money-stress.png){ width=31% }
-</center>
 - **The Opportunity:** Low-risk investment options!
+<center>
+  ![](img/money-stress.png){ width=30% }
+</center>
 
 ---
 
