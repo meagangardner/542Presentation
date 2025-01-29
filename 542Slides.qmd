@@ -29,10 +29,12 @@ slide-number: true
 ---
 
 ## What is a Term Deposit?
-- A low-risk, steady way to grow your savings
-- Keeps initial investment secure
-![](img/TermDeposit.png)
-
+- A low-risk, stead way to grow your savings
+- Money is locked in for a set duration, at a fixed interest rate
+- At the end of term, the initial investment is returned plus interest earned
+<center>
+  ![](img/TermDeposit.png){ width=70% }
+</center>
 ---
 
 ## Our Research Goal
@@ -52,7 +54,7 @@ slide-number: true
 - Each row represents a bank client
 - 17 features capturing client characteristics:
     - Age, marital status, education level, past interactions, days since last contact
-    - Binary target column
+- Binary target column
 
 # Exploratory Data Analysis
 
