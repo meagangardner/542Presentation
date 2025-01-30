@@ -105,12 +105,13 @@ slide-number: true
 ## Logistic Regression Model Overview
 
 - **Why Logistic Regression?**
-  - Simple
-  - Interpretable
+  - Simple and interpretable model for binary classification.
+  - Useful for understanding key predictors for term deposit subscription.
+
 - **Key Features Used in the Model:**
-  - **Balance**: 
-  - **Campaign and Previous Contact**:
-  - **Contact Method**: 
+  - **Balance**: Higher balances indicate higher likelihood of subscription.
+  - **Campaign and Previous Contact**: Capture customer interactions.
+  - **Contact Method**: Includes phone and unknown categories.
 
 ---
 
@@ -137,6 +138,9 @@ slide-number: true
    - Binary classification model with sigmoid activation.
    - Outputs probabilities for subscription likelihood.
 
+3. **Hyperparameter Tuning**:
+   - Grid search for optimal regularization (`C` parameter).
+   - Evaluated using cross-validation on training data.
 
 ---
 
@@ -224,11 +228,11 @@ slide-number: true
 ---
 
 ## Limitations
-- Dataset Imbalance: Significant imbalance affects precision.
-- Model Scope: Logistic regression may not capture complex relationships.
-- Feature Limitations: Lack of features like transaction history impacts performance.
-- Feature Importance: Logistic regression treats features linearly and does not consider their importance.
-- Parameter Optimization: The current model may not be optimally tuned.
+- Dataset Imbalance
+- Model Scope
+- Feature Limitations
+- Feature Importance
+- Parameter Optimization
 
 ---
 
@@ -246,13 +250,12 @@ slide-number: true
 
 ## Future Research Directions
 
-- Suggestions:
-    1) Advanced Models: Use Random Forests or Gradient Boosting Machines to improve precision and accuracy.
-    2) Additional Features: Include transaction history or customer engagement metrics.
-    3) Economic Context: Integrate external factors such as interest rates or market conditions.
-    4) Oversampling Techniques: Implement techniques to balance the dataset and reduce bias toward the majority class.
-    5) Feature Selection and Importance Analysis: Apply techniques to better understand which features contribute most.
-    6) Optimal Parameter Tuning: Conduct techniques to optimally tune the hyperparameters.
+1) Advanced Models
+2) Additional Features
+3) Economic Context
+4) Oversampling Techniques
+5) Feature Selection and Importance Analysis
+6) Optimal Parameter Tuning
 
 ## Conclusion
 
