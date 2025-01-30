@@ -210,20 +210,43 @@ slide-number: true
 ---
 
 ## Limitations
+
+::: {.columns}
+
+::: {.column width="50%"}
 - Dataset Imbalance
 - Model Scope
 - Feature Limitations
 - Parameter Optimization
 
+:::
+
+::: {.column width="50%"}
+![](img/lim.png){fig-align="center" width="100%"}
+:::
+
+:::
+
 ---
 
 ## Future Research Directions
 
+::: {.columns}
+
+::: {.column width="50%"}
 1) Advanced Models
 2) Additional Features
 3) Economic Context
 4) Oversampling Techniques
 5) Optimal Parameter Tuning
+
+:::
+
+::: {.column width="50%"}
+![](img/dir.png){fig-align="center" width="100%"}
+:::
+
+:::
 
 ## Conclusion
 
