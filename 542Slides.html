@@ -8,7 +8,7 @@
 <link href="542Slides_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="542Slides_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="542Slides_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.57">
+  <meta name="generator" content="quarto-1.5.56">
 
   <meta name="author" content="Meagan Gardner, Elshaday Yoseph, Shell Ou, Henry Ha">
   <title>Customer Term Deposit Predictor</title>
@@ -404,40 +404,69 @@ Meagan Gardner, Elshaday Yoseph, Shell Ou, Henry Ha
 </section>
 <section id="target-variable-distribution" class="slide level2">
 <h2>Target Variable Distribution</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
 <li>88.3% are non-subscribers.</li>
-<li>11.7% are subscribers. <img data-src="img/target_variable_distribution.png"></li>
+<li>11.7% are subscribers.</li>
+<li>we need to focus on precision and recall, not just accuracy</li>
 </ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="img/target_variable_distribution.png"></p>
+</div></div>
 </section>
 <section id="balance-distribution-by-subscription-status" class="slide level2">
 <h2>Balance Distribution by Subscription Status</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
 <li>Subscribers generally have higher balances compared to non-subscribers.</li>
 <li>There are significant outliers for both groups.</li>
 <li>Balance could be a strong predictor for subscription.</li>
 </ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/balance_distribution.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="feature-densities-by-class" class="slide level2">
 <h2>Feature Densities by Class</h2>
-<ul>
-<li>Comparing feature distributions between subscribers and non-subscribers:
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
 <li>Age: Subscribers are concentrated in middle-aged groups.</li>
 <li>Balance: Subscribers tend to have higher balances.</li>
 <li>Campaign: Fewer contact attempts are common for most clients.</li>
-</ul></li>
 </ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/age_distribution_density.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="correlation-heatmap" class="slide level2">
 <h2>Correlation Heatmap</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
 <li>Most features exhibit weak correlations.</li>
 <li>Moderate correlation observed between:
 <ul>
 <li>pdays (days since last contact) and previous (number of prior contacts).</li>
 </ul></li>
-<li>Minimal multicollinearity ensures model interpretability.</li>
 </ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/feature_densities_by_class.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="key-insights" class="slide level2">
 <h2>Key Insights</h2>

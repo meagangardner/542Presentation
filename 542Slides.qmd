@@ -64,30 +64,68 @@ slide-number: true
 ---
 
 ## Target Variable Distribution
+::: {.columns}
+
+::: {.column width="50%"}
 - 88.3% are non-subscribers.
 - 11.7% are subscribers.
+- we need to focus on precision and recall, not just accuracy
+:::
+
+::: {.column width="50%"}
 ![](img/target_variable_distribution.png)
+:::
+
+:::
 ---
 
 ## Balance Distribution by Subscription Status
+::: {.columns}
+
+::: {.column width="50%"}
 - Subscribers generally have higher balances compared to non-subscribers.
 - There are significant outliers for both groups.
 - Balance could be a strong predictor for subscription.
+:::
+
+::: {.column width="50%"}
+![](img/balance_distribution.png){fig-align="center" width="100%"}
+:::
+
+:::
 
 ---
 
 ## Feature Densities by Class
-- Comparing feature distributions between subscribers and non-subscribers:
-    - Age: Subscribers are concentrated in middle-aged groups.
-    - Balance: Subscribers tend to have higher balances.
-    - Campaign: Fewer contact attempts are common for most clients.
+::: {.columns}
+
+::: {.column width="50%"}
+- Age: Subscribers are concentrated in middle-aged groups.
+- Balance: Subscribers tend to have higher balances.
+- Campaign: Fewer contact attempts are common for most clients.
+:::
+
+::: {.column width="50%"}
+![](img/age_distribution_density.png){fig-align="center" width="100%"}
+:::
+
+:::
 ---
 
 ## Correlation Heatmap
+::: {.columns}
+
+::: {.column width="50%"}
 - Most features exhibit weak correlations.
 - Moderate correlation observed between:
     - pdays (days since last contact) and previous (number of prior contacts).
-- Minimal multicollinearity ensures model interpretability.
+:::
+
+::: {.column width="50%"}
+![](img/feature_densities_by_class.png){fig-align="center" width="100%"}
+:::
+
+:::
 ---
 
 ## Key Insights
