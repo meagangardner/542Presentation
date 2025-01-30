@@ -105,21 +105,21 @@ slide-number: true
 ## Logistic Regression Model Overview
 
 - **Why Logistic Regression?**
-  - Simple and interpretable model for binary classification.
-  - Useful for understanding key predictors for term deposit subscription.
+  - Simple 
+  - Interpretable 
 
 - **Key Features Used in the Model:**
-  - **Balance**: Higher balances indicate higher likelihood of subscription.
-  - **Campaign and Previous Contact**: Capture customer interactions.
-  - **Contact Method**: Includes phone and unknown categories.
+  - **Balance**
+  - **Campaign and Previous Contact**
+  - **Contact Method**
 
 ---
 
 ## Handling Dataset Imbalance
 
 - **Challenge**:
-  - The dataset is highly imbalanced, with only 11.7% subscribers.
-  - Without addressing this, the model would overpredict non-subscribers.
+  - The dataset is highly imbalanced, 11.7% subscribers.
+  - The model would overpredict non-subscribers.
 
 - **Solution**:
   - Applied class balancing techniques:
@@ -138,9 +138,6 @@ slide-number: true
    - Binary classification model with sigmoid activation.
    - Outputs probabilities for subscription likelihood.
 
-3. **Hyperparameter Tuning**:
-   - Grid search for optimal regularization (`C` parameter).
-   - Evaluated using cross-validation on training data.
 
 ---
 
@@ -154,20 +151,6 @@ slide-number: true
 - **Why These Metrics?**
   - Precision and recall balance is critical for imbalanced datasets.
   - AUC-ROC provides a broader perspective on model performance.
-
----
-
-## Model Limitations
-
-- **Dataset Imbalance**:
-  - Precision remains low for the minority class (subscribers).
-  - Results in higher false positives, increasing marketing costs.
-
-- **Model Simplicity**:
-  - Logistic regression may not capture non-linear patterns or complex relationships.
-
-- **Feature Limitations**:
-  - Lack of transaction history and economic indicators reduces predictive power.
 
 
 # Results and Discussion
