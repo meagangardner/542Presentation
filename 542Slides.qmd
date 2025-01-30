@@ -138,9 +138,6 @@ slide-number: true
    - Binary classification model with sigmoid activation.
    - Outputs probabilities for subscription likelihood.
 
-3. **Hyperparameter Tuning**:
-   - Grid search for optimal regularization (`C` parameter).
-   - Evaluated using cross-validation on training data.
 
 ---
 
