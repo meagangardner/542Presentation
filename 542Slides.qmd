@@ -213,20 +213,7 @@ slide-number: true
 - Dataset Imbalance
 - Model Scope
 - Feature Limitations
-- Feature Importance
 - Parameter Optimization
-
----
-
-## Practical Implications
-
-- Applications:
-    - Optimize marketing strategies using model predictions.
-    - Efficient resource allocation.
-
-- Challenges:
-    - Low precision increases costs by targeting non-subscribers.
-    - Improvements in precision are needed for better efficiency.
 
 ---
 
@@ -236,8 +223,7 @@ slide-number: true
 2) Additional Features
 3) Economic Context
 4) Oversampling Techniques
-5) Feature Selection and Importance Analysis
-6) Optimal Parameter Tuning
+5) Optimal Parameter Tuning
 
 ## Conclusion
 
