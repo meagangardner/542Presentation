@@ -227,6 +227,11 @@ slide-number: true
 
 ## Conclusion
 
+1) Impactful Insights: Identified key predictors.
+2) Model Effectiveness: Demonstrated improvements over the dummy model.
+3) Room for Improvement: Explained current limitations.
+4) Future Enhancements: Mentioned a few improvements.
+5) Practical Benefits: Optimized stategy has many benefits.
 
 
 # Questions?
