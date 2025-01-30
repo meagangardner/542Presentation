@@ -123,7 +123,6 @@ slide-number: true
 
 - **Solution**:
   - Applied class balancing techniques:
-    - Oversampling the minority class (subscribers).
     - Weight adjustments to penalize misclassification of subscribers.
 
 ---
