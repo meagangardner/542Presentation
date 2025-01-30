@@ -105,13 +105,12 @@ slide-number: true
 ## Logistic Regression Model Overview
 
 - **Why Logistic Regression?**
-  - Simple and interpretable model for binary classification.
-  - Useful for understanding key predictors for term deposit subscription.
-
+  - Simple
+  - Interpretable
 - **Key Features Used in the Model:**
-  - **Balance**: Higher balances indicate higher likelihood of subscription.
-  - **Campaign and Previous Contact**: Capture customer interactions.
-  - **Contact Method**: Includes phone and unknown categories.
+  - **Balance**: 
+  - **Campaign and Previous Contact**:
+  - **Contact Method**: 
 
 ---
 
